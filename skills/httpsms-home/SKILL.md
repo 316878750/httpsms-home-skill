@@ -9,7 +9,7 @@ description: "部署、加固和维护 httpSMS 专用 Android 手机与家庭电
 
 ## 工作顺序
 
-1. 检查实际工作区、已有部署和用户授权，定位 `android`、`api`、`web`、`compose.local.yml`、`deploy/local`。上游仓库为 https://github.com/NdoleStudio/httpsms 。本文引用的本地脚本属于加固修改版；若不存在，先实现或取得对应修改，不得声称克隆上游即可执行。
+1. 检查实际工作区、已有部署和用户授权，定位 `android`、`api`、`web`、`compose.local.yml`、`deploy/local`。公开修改版为 https://github.com/316878750/httpsms-home ，上游为 https://github.com/NdoleStudio/httpsms 。新部署优先克隆修改版并读取 `deploy/local/README.md`。已有本地部署先检查差异，不覆盖凭据、签名或数据。
 2. 新部署读取 [部署流程](references/deployment.md)；排障读取 [故障诊断](references/troubleshooting.md)；签名、升级和验收读取 [验收流程](references/acceptance.md)。按当前源码核实工具版本。
 3. 查询本机真实网卡、手机连接和现有配置。历史对话中的 IP、号码、设备序列号、Firebase 项目和证书不能作为新部署默认值。
 4. 先实现和验证，再交付操作说明及脱敏报告。将构建成功、手动启动成功和真实重启后自动恢复成功分开记录。

@@ -2,7 +2,7 @@
 
 ## 先定位修改版
 
-确认仓库包含本地加固实现，核对以下文件；这些不是上游克隆即有的功能。
+公开修改版为 https://github.com/316878750/httpsms-home 。新用户按该仓库 `deploy/local/README.md` 从干净克隆部署；旧本地脚本可能有机器专用路径，先确认版本，不直接覆盖。核对以下文件；这些不是上游克隆即有的功能。
 
 | 文件或模块 | 用途 |
 |---|---|
@@ -11,6 +11,8 @@
 | Android 接收器、上传策略 | 持久任务、稳定 ID、合法响应与重试 |
 | Go 消息服务、PostgreSQL 队列 | 去重、事务和事件补传 |
 | `Build-Android.ps1`、`Build-Release.ps1` | Android 构建与正式签名 |
+| `Configure-Tools.ps1`、`Import-Firebase.ps1` | 新用户工具路径及自有项目配置 |
+| `Protect-DockerLanPort.ps1`、`Enable-DockerPeer.ps1` | 先验证宿主机防火墙再配置 Docker 网关 |
 | `Enable-LoginRecovery.ps1`、`Resume-Local.ps1` | 登录后恢复与证据记录 |
 
 实际路径以工作区为准，不能猜测脚本参数。读取脚本后再调用。

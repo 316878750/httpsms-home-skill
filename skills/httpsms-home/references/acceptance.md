@@ -4,7 +4,7 @@
 
 正式构建须非 debuggable，递增 versionCode，并检查合并 Manifest 的最终权限。签名私钥、密码及 lineage 私下保存、备份且排除 Git；后续升级复用同一身份。
 
-已有 debug 安装迁移正式签名时，先确认旧签名材料及设备支持，可用 APK Signature Scheme v3 rotation lineage 保留数据和合法签名权限继承。不能为解决冲突直接卸载。全新安装不需要继承他人的 debug 身份。
+公开修改版默认全新正式签名，不依赖 debug 密钥。迁移自己旧 debug 安装时才给 Build-Release.ps1 指定 -OldDebugKeystore，先确认旧签名材料及设备支持，可用 APK Signature Scheme v3 rotation lineage 保留数据和合法签名权限继承。不能为解决冲突直接卸载。全新安装不需要继承他人的 debug 身份。
 
 核实实际脚本与设备后，示例：
 

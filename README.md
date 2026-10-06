@@ -28,7 +28,7 @@ $httpsms-home 请检查我的 Windows 和 Android 环境，准备一个只在家
 
 ## 使用边界
 
-本仓库是工作流程指南，**不是完整修改版源码，也不是一键部署软件**。文档引用的本地 PowerShell 脚本属于加固修改版；若实际工作区没有这些文件，需先取得或实现对应功能，不能在未经修改的上游仓库直接执行示例。
+本仓库是工作流程指南。配套 [公开修改版源码](https://github.com/316878750/httpsms-home) 和 [从干净克隆部署教程](https://github.com/316878750/httpsms-home/blob/main/deploy/local/README.md) 提供完整应用和部署脚本。安装 Skill 后，让 Codex 克隆该修改版、检查环境并按教程部署；每位用户仍需提供自己的设备和 Firebase 配置。
 
 原项目：[NdoleStudio/httpsms](https://github.com/NdoleStudio/httpsms)。本仓库未复制其应用源码，未分发 APK，也不是上游官方项目。
 
