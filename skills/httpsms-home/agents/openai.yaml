@@ -1,0 +1,4 @@
+interface:
+  display_name: "httpSMS 家庭收信部署"
+  short_description: "部署专用 Android 收信和家庭电脑网页，验证补传与重启恢复"
+  default_prompt: "使用 $httpsms-home 帮我部署或维护专用 Android 手机和家庭电脑上的 httpSMS 收信系统。"

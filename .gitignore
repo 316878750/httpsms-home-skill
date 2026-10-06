@@ -1,0 +1,10 @@
+.local/
+*.env
+*.apk
+*.p12
+*.jks
+*.keystore
+*.dump
+google-services.json
+service-account*.json
+__pycache__/
